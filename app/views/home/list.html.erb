@@ -1,0 +1,38 @@
+
+
+<div class="main-container">
+  <div class="image-row">
+    <img class="avatar-image" src="/2024.10.11%20Image%20for%20Link-in-bio.png" alt="KT's AI Avatar">
+  </div>
+  
+  <div class="name-row">
+    Kevin (KT) Tsao
+  </div>
+  
+  <div class="social-icons-row">
+    <a href="https://www.linkedin.com/in/kevin-t-89476b99/" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="https://www.instagram.com/" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://github.com/KHT369" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </div>
+
+   <div class="links-row">
+    <% @list_of_items.each do |the_item| %>
+        <div class="item">
+          <img src="<%= the_item.thumbnail_url %>" class="thumbnail">
+
+          <a class="link-text" target="_blank" href="<%= the_item.link_url %>">
+            <%= the_item.link_description %>
+
+          </a>
+        </div>
+      <% end %>
+    </div>
+</div>

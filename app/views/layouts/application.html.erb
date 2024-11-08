@@ -1,6 +1,89 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+   <style>
+      /* * {
+        border: thin red dotted;
+      } */
+      
+      html {
+        min-height: 100%;
+      }
+
+      body {
+        min-height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: radial-gradient(circle at 50% 50%, #000000, #151925, #23315e, #2b40ab, #3d58d2, #6078c2, #8491b4, #a8a8a8);
+        color: white;
+        font-family: "Cabin";
+      }
+
+      a {
+        color:white;
+        text-decoration: none;
+      }
+
+      .item {
+        background-color: rgba(150, 142, 142, 0.3);
+        margin-bottom: 20px;
+        display:flex;
+        align-items: center;
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53;
+      }
+      
+      .avatar-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+        border: solid 1px black
+      }
+
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+      }
+
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: "Roboto Condensed";
+        font-size: 24px;
+        font-weight: 900;
+      }
+
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .link-text{
+        text-align: center;
+        flex-grow: 1;
+      }
+
+
+    </style>
+
     <title>Link-in-bio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
